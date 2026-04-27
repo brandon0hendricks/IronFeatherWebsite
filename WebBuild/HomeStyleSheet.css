@@ -1,0 +1,187 @@
+#title {
+    padding-top: 10px;
+    margin-left: 80px;
+    color: #c77b58;
+    margin-top: 0;
+    font-size: 28px;
+    font-family: 'Gothic A1';
+}
+
+header {
+    background-color: #3b3f54;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+    min-height: 50px;
+}
+
+#directory {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    margin-top: -20px;
+    padding: 2px 0;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+    gap: 10px;
+    font-size: 17px;
+    background-color: #c77b58;
+    font-family: 'Gothic A1';
+}
+
+#navi {
+    flex: 1;
+    background-color: #c77b58;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+#navi:hover {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#Icon {
+    float: left;
+    margin-top: 0;
+    width: 50px;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #2b2f40;
+    font-family: 'Gothic A1';
+}
+
+#Main {
+    margin: 40px 15% 0;
+    color: white;
+}
+
+#MainGamePage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px 15% 0;
+    color: white;
+}
+
+#GameInfo {
+    max-width: 300px;
+    height: 100px;
+}
+
+#GameLink {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #a5c7a8;
+}
+
+#GameLink:hover {
+    background-color: #557358;
+    cursor: pointer;
+}
+
+footer {
+    min-height: 50px;
+    margin-top: 40px;
+    background-color: #c77b58;
+    color: white;
+    font-family: 'Gothic A1';
+}
+
+#copyright {
+    float: left;
+    margin: 0 2%;
+}
+
+#socials {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    float: right;
+    list-style-type: none;
+}
+
+#socialIcon {
+    width: 40px;
+}
+
+#socialIcon:hover {
+    filter: invert(80%);
+}
+
+#ContactList {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 750px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("HomeImage.png");
+}
+
+#HomeText {
+    color: #c77b58;
+    font-size: 45px;
+    font-family: 'Gothic A1';
+    font-weight: bold;
+}
+
+#TheTeam {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#TheTeam h2 {
+    font-size: 32px;
+    color: #c77b58;
+    margin-bottom: 20px;
+}
+
+/* Individual Teammate Layout */
+#teammate {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+    text-align: left;
+    margin-bottom: 45px;
+    align-items: baseline; 
+}
+
+#name {
+    margin: 0;
+    font-size: 24px;
+    color: #c77b58;
+    white-space: nowrap; 
+}
+
+#teamTitle {
+    margin: 0;
+    font-size: 18px;
+    color: #a5c7a8;
+    font-weight: normal;
+}
+
+#TeamInfo {
+    grid-column: 1 / -1; 
+    margin-top: 10px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
