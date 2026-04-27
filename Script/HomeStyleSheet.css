@@ -1,0 +1,158 @@
+#title {
+	padding-top:10px;
+	margin-left:80px;
+	color: #c77b58;
+	margin-top: 0;
+	font-size: 28px;
+ 	font-family: 'Gothic A1'
+}
+
+header {
+	background-color: #3b3f54;
+	text-align: left;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	z-index: 1000;
+	position: sticky;
+	min-height: 50px;
+}
+#directory {
+	width: 100%;
+	margin-top: -20px;
+ 	justify-content: center;
+	text-align: center;
+	display:grid;
+	grid-template-columns: repeat(5, 1fr); 
+	list-style-type: none;
+	gap: 10px;
+	padding: 0;
+	padding-bottom:2px;
+	padding-top:2px;
+	font-size: 17px;
+	background-color: #c77b58;
+ 	font-family: 'Gothic A1'
+
+}
+#navi {
+	background-color: #c77b58;
+	text-align:center;
+	flex:1;
+	color: white;
+	text-decoration:none; 
+
+}
+#Icon{
+	float:left;
+	margin-top:0px;
+	width: 50px;
+	
+}
+#navi:hover {
+	font-size: 19px;
+	color: white;
+	font-weight:bold;
+}
+
+body {
+	background-color: #2b2f40;
+ 	font-family: 'Gothic A1';
+	min-height: 100vh;
+ 	margin: 0;
+ 	display: grid;
+  	grid-template-rows: auto 1fr auto;
+} 
+#border{
+
+}
+#Main {
+	margin-top: 40px;
+	margin-left: 15%;
+	margin-right: 15%;
+	color: white;
+	
+	
+}
+#MainGamePage{
+	color: white;
+	justify-content: center;
+	margin-top: 40px;
+	margin-left: 15%;
+	margin-right: 15%;
+	display:flex;
+	flex-wrap: wrap;
+	gap:25px;
+
+}
+#GameInfo{
+	max-width:300px;
+	height: 100px;
+
+}
+
+#GameLink {
+	padding:10px;
+}
+
+#GameLink {
+	color: white;
+	text-decoration:none; 
+	background-color: #a5c7a8;
+
+}
+#GameLink:hover {
+   	color: white; 
+	background-color: #557358;
+   	text-decoration:none; 
+   	cursor:pointer;  
+}
+footer{
+	
+	background-color: #c77b58;
+	min-height: 50px;
+	color:white;
+	font-family: 'Gothic A1';
+	margin-top: 40px;
+}
+
+#copyright {
+	float:left;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+#socials {
+	float:right;
+	display:grid;
+	grid-template-columns: 70px 70px 70px; 
+	list-style-type: none;
+}
+#socialIcon{
+	width:40px;
+}
+#socialIcon:hover{
+	filter: invert(80%);
+}
+#ContactList{
+	text-decoration: none; 
+	list-style-type: none;
+}
+#Home{
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("HomeImage.png");
+	width: 100%;
+	height: 750px;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+#HomeText{
+	font-size: 45px;
+ 	font-family: 'Gothic A1';
+	color: #c77b58;
+	font-weight: bold;
+}
+
+
+
+
+
