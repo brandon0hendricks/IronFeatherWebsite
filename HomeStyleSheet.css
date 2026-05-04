@@ -141,47 +141,108 @@ footer {
     font-family: 'Gothic A1';
     font-weight: bold;
 }
-
 #TheTeam {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 60px auto;
     padding: 0 20px;
-    text-align: center;
+    text-align: center; 
 }
 
 #TheTeam h2 {
     font-size: 32px;
     color: #c77b58;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
-/* Individual Teammate Layout */
-#teammate {
+.team-grid {
     display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 15px;
-    text-align: left;
-    margin-bottom: 45px;
-    align-items: baseline; 
+    grid-template-columns: repeat(3, minmax(250px, 300px)); 
+    gap: 40px 30px;
+    justify-content: center; 
+    align-items: start;
+    margin: 0 auto;
 }
 
-#name {
+.teammate {
+    display: block;
+    width: 100%;
+    text-align: center; 
+}
+
+summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    cursor: pointer;
+    list-style: none;
+    padding: 10px 0;
+    background: transparent;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.name {
     margin: 0;
-    font-size: 24px;
+    font-size: 22px;
     color: #c77b58;
-    white-space: nowrap; 
+    text-transform: uppercase;
 }
 
-#teamTitle {
-    margin: 0;
-    font-size: 18px;
+.teamTitle {
+    margin: 5px 0 0 0;
+    font-size: 16px;
     color: #a5c7a8;
     font-weight: normal;
 }
 
-#TeamInfo {
-    grid-column: 1 / -1; 
-    margin-top: 10px;
+.info-wrapper {
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #444;
+    background: rgba(255, 255, 255, 0.02);
+    text-align: left; 
+}
+
+.TeamInfo {
+    margin: 0;
+    font-size: 14px;
     line-height: 1.6;
     color: #e0e0e0;
 }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.teammate[open] .info-wrapper {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@media (max-width: 900px) {
+    /* Switches to 2 columns on tablets */
+    .team-grid { grid-template-columns: repeat(2, minmax(250px, 300px)); }
+}
+
+@media (max-width: 600px) {
+    /* Switches to 1 column on phones */
+    .team-grid { grid-template-columns: 1fr; }
+}
+
+#AboutUs{
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+
+}
+#OurStory{
+    font-size: 32px;
+    color: #c77b58;
+    margin-bottom: 20px;
+}
+
+
+    color: #e0
